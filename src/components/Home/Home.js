@@ -9,3 +9,5 @@ const Home=(props)=>{
     </Card>
     );
 };
+
+export default Home;
