@@ -21,6 +21,9 @@ const Login = (props) => {
       );
     }, 500);
 
+    // clearTimeout(identifier);
+
+    //Cleanup and Anonymous function
     return () => {
       console.log('CLEANUP');
       clearTimeout(identifier);
