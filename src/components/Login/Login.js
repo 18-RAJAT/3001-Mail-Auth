@@ -11,7 +11,7 @@ const emailReducer=(state,action)=>{
 
   if(action.type==='INPUT_BLUR'){
     return {value:state.value,isValid:state.val.includes('@')};
-  };
+  }
   return {value:'',isValid:false};
 };
 
@@ -26,7 +26,6 @@ const Login = (props) => {
   const [emailState,dispatchEmail]=useReducer(emailReducer,{value:'',isValid:false});
 
 
-  
   useEffect(() => {
     console.log('EFFECT RUNNING');
 
@@ -49,6 +48,8 @@ const Login = (props) => {
   //   };
   // }, [enteredEmail, enteredPassword]);
 
+
+  
   const emailChangeHandler = (event) => {
     // setEnteredEmail(event.target.value);
     dispatchEmail({type:'USER_INPUT',val:event.target.value});
