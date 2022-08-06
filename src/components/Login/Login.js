@@ -64,6 +64,7 @@ const Login = (props) => {
     );
   };
 
+  
   const validateEmailHandler = () => {
     dispatchEmail({type: 'INPUT_BLUR'});
   };
@@ -117,5 +118,6 @@ const Login = (props) => {
     </Card>
   );
 };
+
 
 export default Login;
