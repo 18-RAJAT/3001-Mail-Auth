@@ -8,7 +8,6 @@ const Input = React.forwardRef((props, ref) => {
   const activate = () => {
     inputRef.current.focus(); //focous is a method of the input element in the DOM tree (the input element is the current element) 
   };
-
   useImperativeHandle(ref, () => {
     return {
       focus: activate,
